@@ -24,6 +24,9 @@ int grid[9][9] =  {
 };
 
 bool valid = true;
+bool columns[9];
+bool rows[9];
+bool subgrids[9]; 
 
 void* col1(void* arg) {
 
@@ -67,10 +70,7 @@ void* col1(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    columns[colNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 
@@ -118,10 +118,7 @@ void* col2(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    columns[colNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 
@@ -169,10 +166,7 @@ void* col3(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    columns[colNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 
@@ -220,10 +214,7 @@ void* col4(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    columns[colNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 
@@ -272,10 +263,7 @@ void* col5(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    columns[colNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 
@@ -323,10 +311,7 @@ void* col6(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    columns[colNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 
@@ -374,10 +359,7 @@ void* col7(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    columns[colNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 
@@ -425,10 +407,7 @@ void* col8(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    columns[colNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 
@@ -476,10 +455,7 @@ void* col9(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    columns[colNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 
@@ -527,10 +503,7 @@ void* row1(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    rows[rowNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -577,10 +550,7 @@ void* row2(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    rows[rowNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -627,10 +597,7 @@ void* row3(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    rows[rowNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -677,10 +644,7 @@ void* row4(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    rows[rowNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -727,10 +691,7 @@ void* row5(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    rows[rowNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -827,10 +788,7 @@ void* row7(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    rows[rowNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -877,10 +835,7 @@ void* row8(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    rows[rowNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -927,10 +882,7 @@ void* row9(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    rows[rowNo] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -979,10 +931,7 @@ void* subGrid1(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    subgrids[0] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -1031,10 +980,7 @@ void* subGrid2(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    subgrids[1] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -1083,10 +1029,7 @@ void* subGrid3(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    subgrids[2] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -1135,10 +1078,7 @@ void* subGrid4(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    subgrids[3] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -1187,10 +1127,7 @@ void* subGrid5(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    subgrids[4] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -1239,10 +1176,7 @@ void* subGrid6(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    subgrids[5] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -1291,10 +1225,7 @@ void* subGrid7(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    subgrids[6] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -1343,10 +1274,7 @@ void* subGrid8(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    subgrids[7] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -1395,10 +1323,7 @@ void* subGrid9(void* arg) {
         }
     }
 
-    if (one and two and three and four and five and six and seven and eight and nine)
-        valid = true;
-    else
-        valid = false;
+    subgrids[8] = (one and two and three and four and five and six and seven and eight and nine);
 
     return NULL;
 }
@@ -1466,11 +1391,18 @@ int main() {
     pthread_join(tid26, NULL);
     pthread_join(tid27, NULL);
 
-    if (valid)
-        cout << "Grid is valid\n";
-    else
-        cout << "Grid is invalid\n";
+    for(int i = 0; i < 9; i++) {
+        if (not (rows[i] and columns[i] and subgrids[i])) {
+            valid = false;
+        }
+    }
         
+    if (valid) {
+        cout << "valid\n";
+    } else {
+        cout << "invalid\n";
+    }
     
 	pthread_exit(NULL);
 }
+
